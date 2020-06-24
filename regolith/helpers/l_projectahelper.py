@@ -54,8 +54,9 @@ def subparser(subpi):
     subpi.add_argument("-f", "--filter", nargs="+",
                        help="Search this collection by giving key element pairs"
                        )
-    subpi.add_argument("-k", "--keys", nargs="+", help="Specify what keys to return values from when running "
-                                                       "--filter. If no argument is given the default is just the id.")
+    subpi.add_argument("-k", "--keys", nargs="+",
+                       help="Specify what keys to return values from when running --filter. If no argument is given "
+                            "the default is just the id.") 
     return subpi
 
 
